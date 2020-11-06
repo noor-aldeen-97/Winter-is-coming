@@ -18,15 +18,19 @@
     <header>
             <div class="py-3 pl-4">
                 <img src="assets/img/logo.png" width="70" height="70" class="img-fluid">
+                <div class="float-right text-light mr-3 mt-2">
+                    <i id="bar_menu1" class="fa fa-bars d-inline-block d-md-none" onclick="openMenu()"></i>
+                </div>
             </div>
-            <nav class="position-fixed w-auto vh-100">
+            <nav id="menu" class="position-fixed w-auto w-md-down-100 vh-100 z-index-2 d-none d-md-block">
                 <div class="position-absolute blur nav-blur"></div>
                 <div class="container text-light">
                     <di class="row flex-column min-vh-100 pt-4 text-center">
-                        <div class="col">
-                            <i id="bar_menu" class="fa fa-bars"></i>
+                        <div class="col text-right">
+                            <i id="bar_menu" class="fa fa-bars d-none d-md-block"></i>
+                            <i class="fa fa-times d-block d-md-none ml-auto" onclick="closeMenu()"></i>
                         </div>
-                        <div class="col d-flex align-items-end">
+                        <div class="col d-flex align-items-end justify-content-center">
                             <ul class="list-unstyled socail-list">
                                 <li>
                                     <i class="fab fa-facebook-f"></i>
@@ -44,13 +48,13 @@
             </nav>
     </header>
 
-    <section class="h-100 mt-5 pt-5 pl-2">
-        <div class="container-fluid mt-5 pt-5 pl-2">
+    <section class="h-100 mt-3 m-auto mt-md-5 pt-md-5 pl-md-2">
+        <div class="container-fluid mt-0 pt-0  mt-md-5 pt-md-5 pl-md-2">
             <div class="row">
                 <div class="col text-light">
-                    <div class="w-50 position-relative px-3 py-2">
+                    <div class="w-50 position-relative px-3 py-2 w-md-down-100">
                         <div class="blur blur-light rounded shadow"></div>
-                        <div class="z-index-2 position-relative">
+                        <div class="position-relative">
                             <h1>Winter Is Coming</h1>
                             <p class="lead">Pariatur quis et nulla enim eu voluptate nulla culpa Lorem aliqua esse pariatur aute. Dolor aliqua commodo minim in incididunt quis dolore. Incididunt consectetur reprehenderit consequat nulla et sint. Ea occaecat irure officia nisi do fugiat mollit quis pariatur. Minim ad in mollit consequat proident anim sit esse labore nisi ad anim excepteur.</p>
                         </div>
